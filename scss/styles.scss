@@ -1,0 +1,37 @@
+// imports
+@import "base/variables";
+
+// Reset 
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+// Seccion HEADER
+
+.header {
+    background: #000;
+
+    .logo {
+        background-color: #242F9B;
+    }
+
+    .nav-bar {
+        background-color: #646FD4;
+    }
+}
+
+// Seccion del MAIN
+.main {
+    background-color: #000;
+
+    .banner-offer {
+        background-color: #2F8F9D;
+    }
+}
+
+// Seccion de FOOTER
+.footer {
+    background-color: #000;
+}
