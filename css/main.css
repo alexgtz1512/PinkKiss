@@ -1,19 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 * {
   margin: 10px;
   padding: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background-color: #FEE3EC; }
+
+.web-container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: column nowrap; }
 
 .header {
-  background: #000; }
+  background: #000;
+  height: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
   .header .logo {
-    background-color: #242F9B; }
+    background-color: #242F9B;
+    flex: 1 1 auto; }
   .header .nav-bar {
-    background-color: #646FD4; }
+    background-color: #646FD4;
+    flex: 3 1 auto; }
+  .header .fa-bars {
+    display: none; }
 
 .main {
   background-color: #000; }
   .main .banner-offer {
     background-color: #2F8F9D; }
+  .main .main-cards {
+    background-color: #FF8C32;
+    display: flex;
+    flex-wrap: wrap; }
+    .main .main-cards .card {
+      background-color: #5800FF;
+      flex: 1 1 100%; }
+  .main .banner-ads {
+    background-color: #DDDDDD; }
 
 .footer {
-  background-color: #000; }
+  background-color: #000;
+  height: 6rem;
+  display: flex;
+  flex-flow: column nowrap; }
+  .footer .social-networks {
+    background-color: #E900FF; }
+  .footer .copyright {
+    background-color: #FFC600; }
+
+@media screen and (max-width: 800px) {
+  .main .main-cards .card {
+    flex: 1 1 40%; } }
+
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: space-between; }
+    .header .logo {
+      flex: 0 1 auto; }
+    .header .nav-bar {
+      display: none; }
+    .header .fa-bars {
+      background-color: #00B4D8;
+      display: block;
+      flex: 0 1 auto; }
+  .main .banner-offer {
+    display: none; }
+  .main .banner-ads {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .main .main-cards {
+    flex-direction: column; } }

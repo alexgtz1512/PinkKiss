@@ -1,0 +1,56 @@
+// Seccion de MEDIAS QUERIES
+
+// ------------- MQ 800px -------------
+@media screen and (max-width: 800px) {
+    .main {
+        .main-cards {
+
+            .card {
+                flex: 1 1 40%;
+            }
+        }
+    }
+}
+
+// ------------- MQ 600px -------------
+@media screen and (max-width: 600px) {
+    .header {
+        justify-content: space-between;
+        .logo {
+            flex: 0 1 auto;
+        }
+
+        .nav-bar {
+            display: none;
+        }
+
+        .fa-bars {
+            background-color: #00B4D8;
+            display: block;
+            flex: 0 1 auto;
+        }
+    }
+
+
+    .main {
+        .banner-offer {
+            display: none;
+        }
+
+        .banner-ads {
+            display: none;
+        }
+    }
+}
+
+// ------------- MQ 480px -------------
+@media screen and (max-width: 480px) {
+    .main {
+        .main-cards {
+            flex-direction: column;
+            .card {
+
+            }
+        }
+    }
+}

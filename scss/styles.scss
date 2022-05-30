@@ -1,24 +1,52 @@
 // imports
-@import "base/variables";
+@import "utilities/variables";
+@import "base/fonts";
+
+
 
 // Reset 
 * {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+        background-color: #FEE3EC;
+}
+
+// Seccion PADRE
+.web-container {
+    max-width: $max-width;
+    min-width: $min-width;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column nowrap;
+
 }
 
 // Seccion HEADER
 
 .header {
     background: #000;
+    height: $header-height;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
     .logo {
         background-color: #242F9B;
+        flex: 1 1 auto;
     }
 
     .nav-bar {
         background-color: #646FD4;
+        flex: 3 1 auto;
+    }
+
+    .fa-bars {
+        display: none;
     }
 }
 
@@ -29,9 +57,37 @@
     .banner-offer {
         background-color: #2F8F9D;
     }
+
+    .main-cards {
+        background-color: #FF8C32;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #5800FF;
+            flex: 1 1 100%;
+        }
+    }
+
+    .banner-ads {
+        background-color: #DDDDDD;
+    }
 }
 
 // Seccion de FOOTER
 .footer {
     background-color: #000;
+    height: $footer-height;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .social-networks {
+        background-color: #E900FF;
+    }
+
+    .copyright {
+        background-color: #FFC600;
+    }
 }
+
+@import "utilities/media-queries";
