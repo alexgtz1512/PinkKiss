@@ -15,9 +15,9 @@
 // ------------- MQ 600px -------------
 @media screen and (max-width: 600px) {
     .header {
-        justify-content: space-between;
+        
         .logo {
-            flex: 0 1 auto;
+            flex: 1 1 auto;
         }
 
         .nav-bar {
@@ -27,7 +27,8 @@
         .fa-bars {
             background-color: #00B4D8;
             display: block;
-            flex: 0 1 auto;
+            flex: 1 1 auto;
+            text-align: center;
         }
     }
 
