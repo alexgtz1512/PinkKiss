@@ -7,6 +7,21 @@
 
             .card {
                 flex: 1 1 40%;
+                flex-direction: column;
+
+                .pic-home {
+                    width: 100%;
+                }
+
+                .card-description {
+                    p {
+                        display: none;
+                    }
+                }
+            }
+
+            .card:nth-child(even) .card-description {
+                order: 0;
             }
         }
     }

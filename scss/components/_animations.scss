@@ -1,0 +1,28 @@
+// Animaciones del proyecto
+
+.header {
+    .logo {
+        img {
+            box-shadow: 4px 5px 5px 0 gray;
+        }
+    }
+
+    .nav-bar {
+        a:hover {
+            color: #fff;
+            transform: scale(1.1);
+            transition: all 0.15s;
+        }
+    }
+}
+
+.main-cards {
+    .card {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        transition: all 0.15s;
+    }
+
+    .card:hover {
+        transform: translate(4px, -1%);
+    }
+}
