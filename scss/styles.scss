@@ -9,6 +9,7 @@
 .web-container {
     max-width: $max-width;
     min-width: $min-width;
+    min-height: 100vh;
     padding: 10px;
     margin: 0 auto;
     display: flex;
@@ -20,13 +21,13 @@
 
 .header {
     background: #F9C5D5;
-    
+
     height: $header-height;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 3px solid #fff;
-    
+
 
     .logo {
         // background-color: #242F9B;
@@ -40,7 +41,7 @@
             margin: auto;
             display: block;
             border-radius: 50%;
-            
+
         }
     }
 
@@ -54,6 +55,7 @@
         a {
             letter-spacing: 3px;
             font-weight: 400;
+            color: rgba(120, 70, 161, 0.801);
         }
     }
 
@@ -64,6 +66,7 @@
 
 // Seccion del MAIN
 .main {
+    flex: 1;
     // background-color: #EDD2F3;
     display: flex;
     flex-flow: column nowrap;
@@ -102,6 +105,19 @@
             
         }
 
+        .card-section {
+            flex: 1 1 40%;
+        }
+
+        .card:nth-child(even) .card-description {
+            order: -1;
+            margin-left: 20px;
+        }
+
+        .card-section:nth-child(even) .card-description {
+            order: 0;
+        }
+
         .pic-home {
             width: 40%;
             overflow: hidden;
@@ -120,7 +136,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap:15px;
+            gap: 15px;
 
             h3 {
                 letter-spacing: 3px;
@@ -129,11 +145,6 @@
             p {
                 font-weight: 300;
             }
-        }
-
-        .card:nth-child(even) .card-description {
-                order: -1;
-                margin-left: 20px;
         }
     }
 
@@ -145,6 +156,48 @@
         img {
             width: 100%;
             height: 100%;
+        }
+    }
+
+    // Seccion del formulario
+    .contact-container {
+        // height: 100%;
+        margin: 15px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        .contact-form {
+            flex: 1 1 40%;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            flex: 1 1 20%;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
+            h3 {
+                margin: 30px 0;
+            }
+
+
+            .img-info {
+                // border: 1px solid black;
+                width: 100%;
+                height: 80%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
         }
     }
 }

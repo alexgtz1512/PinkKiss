@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -9,45 +9,43 @@
     <!-- link icons fontawesome -->
     <script src="https://kit.fontawesome.com/63fd6d8437.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Belleza</title>
+    <!-- Ligamos la hoja de estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Inicio | Pink Kiss</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="main-header">
-        <div class="wrapper">
-            <a href="/">
-                <img src="img/logo.jpeg" alt="Logo">
-            </a>
-            <nav class="links">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="belleza.html">Belleza</a></li>
-                    <li><a href="lenceria.html">Lenceria</a></li>
-                    <li><a href="skyncare.html">SkynCare</a></li>
-                    <li><a href="cosmeticos.html">Cosmeticos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+
+    <div class="web-container">
+
+        <!-- Seccion del HEADER -->
+        <div class="header ">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="img/logo.jpeg" alt="Logo">
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Inicio</a>
+                <a href="belleza.html">Belleza</a>
+                <a href="lenceria.html">Lenceria</a>
+                <a href="skyncare.html">SkynCare</a>
+                <a href="cosmeticos.html">Cosmeticos</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <div>
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
 
-    <!-- Seccion MAIN -->
-    <main class="main">
-        <section class="banner-offer">
-            <div class="wrapper">
+
+        <!-- Seccion del MAIN -->
+        <main class="main ">
+            <section class="banner-offer">
                 <img src="img/banner-ofertas.webp" alt="banner ofertas">
-            </div>
-        </section>
+            </section>
 
-        <section class="main-cards">
-            <div class="wrapper section-card">
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+            <section class="main-cards ">
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/paletas-cosmeticos.jpg" alt="paletas">
                     </div>
                     <div class="card-description">
@@ -55,8 +53,8 @@
                     </div>
                 </a>
 
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/brochas-cosmeticos.jpg" alt="brochas">
                     </div>
                     <div class="card-description">
@@ -64,17 +62,17 @@
                     </div>
                 </a>
 
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/primers-cosmeticos.jpg" alt="primers">
                     </div>
                     <div class="card-description">
                         <h3>Primers</h3>
                     </div>
                 </a>
-                
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/sets-cosmeticos.jpg" alt="sets">
                     </div>
                     <div class="card-description">
@@ -82,8 +80,8 @@
                     </div>
                 </a>
 
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/labiales-cosmeticos.jpg" alt="labiales">
                     </div>
                     <div class="card-description">
@@ -91,8 +89,8 @@
                     </div>
                 </a>
 
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/delineadores-cosmeticos.jpg" alt="delineadores">
                     </div>
                     <div class="card-description">
@@ -100,40 +98,34 @@
                     </div>
                 </a>
 
-                <a href="#" class="card card-module">
-                    <div class="card-pic">
+                <a href="#" class="card card-section">
+                    <div class="pic-home">
                         <img src="img/bases-cosmeticos.jpg" alt="bases">
                     </div>
                     <div class="card-description">
                         <h3>Bases</h3>
                     </div>
                 </a>
+            </section>
 
-                <section class="banner-ads">
-                    <div class="wrapper">
-                        <img src="" alt="banner_publicidad">
-                    </div>
-                </section>
-        </section>
-    </main>
+            <section class="banner-ads">
+                <img src="img/banner_publicidad.jpg" alt="banner publicidad">
+            </section>
+        </main>
 
-    <!-- Pie de pagina -->
-    <footer class="footer">
-        <div class="social-networks">
-            <a href="#">
-                <img src="img/facebook.png" alt="facebook">
-            </a>
-            <a href="#">
-                <img src="img/instagram.png" alt="Instagram">
-            </a>
-            <a href="#">
-                <img src="img/whatsapp.png" alt="whatsapp">
-            </a>
-        </div>
-        <div class="copyright">
-            <p>Todos los derechos reservados © 2022 | Pink Kiss S.A. de C.V.</p>
-        </div>
-    </footer>
+        <!-- Seccion del FOOTER -->
+        <footer class="footer">
+            <div class="social-networks">
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <div class="copyright">
+                <p>Todos los derechos reservados © 2022 | Pink Kiss S.A. de C.V.</p>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
 

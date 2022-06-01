@@ -12,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: black; }
 
 .header .logo img {
   box-shadow: 4px 5px 5px 0 gray; }
@@ -32,6 +32,7 @@ a {
 .web-container {
   max-width: 1200px;
   min-width: 320px;
+  min-height: 100vh;
   padding: 10px;
   margin: 0 auto;
   display: flex;
@@ -61,11 +62,13 @@ a {
     justify-content: space-evenly; }
     .header .nav-bar a {
       letter-spacing: 3px;
-      font-weight: 400; }
+      font-weight: 400;
+      color: rgba(120, 70, 161, 0.801); }
   .header .fa-bars {
     display: none; }
 
 .main {
+  flex: 1;
   display: flex;
   flex-flow: column nowrap;
   gap: 13px; }
@@ -88,6 +91,13 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+    .main .main-cards .card-section {
+      flex: 1 1 40%; }
+    .main .main-cards .card:nth-child(even) .card-description {
+      order: -1;
+      margin-left: 20px; }
+    .main .main-cards .card-section:nth-child(even) .card-description {
+      order: 0; }
     .main .main-cards .pic-home {
       width: 40%;
       overflow: hidden;
@@ -107,18 +117,39 @@ a {
         letter-spacing: 3px; }
       .main .main-cards .card-description p {
         font-weight: 300; }
-    .main .main-cards .card:nth-child(even) .card-description {
-      order: -1;
-      margin-left: 20px; }
   .main .banner-ads {
     background-color: #DDDDDD;
-    height: 150px; }
+    height: 160px; }
     .main .banner-ads img {
       width: 100%;
       height: 100%; }
+  .main .contact-container {
+    margin: 15px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; }
+    .main .contact-container .contact-form {
+      flex: 1 1 40%; }
+    .main .contact-container .contact-info {
+      background-color: #fff;
+      flex: 1 1 20%;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+      .main .contact-container .contact-info h3 {
+        margin: 30px 0; }
+      .main .contact-container .contact-info .img-info {
+        width: 100%;
+        height: 80%; }
+        .main .contact-container .contact-info .img-info img {
+          width: 100%;
+          height: 100%; }
 
 .footer {
-  height: 6rem;
+  height: 5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -131,6 +162,12 @@ a {
     font-size: .8rem; }
 
 @media screen and (max-width: 800px) {
+  .header {
+    height: 6.5rem; }
+    .header .logo img {
+      width: 5rem; }
+    .header .nav-bar a {
+      letter-spacing: 0; }
   .main .main-cards .card {
     flex: 1 1 40%;
     flex-direction: column; }
@@ -147,7 +184,6 @@ a {
   .header .nav-bar {
     display: none; }
   .header .fa-bars {
-    background-color: #00B4D8;
     display: block;
     flex: 1 1 auto;
     text-align: center; }

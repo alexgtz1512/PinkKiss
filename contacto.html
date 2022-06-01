@@ -1,108 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!-- link icons fontawesome -->
     <script src="https://kit.fontawesome.com/63fd6d8437.js" crossorigin="anonymous"></script>
 
-
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Contacto</title>
+    <!-- Ligamos la hoja de estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Inicio | Pink Kiss</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="wrapper">
-            <a href="/">
-                <img src="img/logo.jpeg" alt="Logo">
-            </a>
-            <nav class="links">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="belleza.html">Belleza</a></li>
-                    <li><a href="lenceria.html">Lenceria</a></li>
-                    <li><a href="skyncare.html">SkynCare</a></li>
-                    <li><a href="cosmeticos.html">Cosmeticos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+
+    <div class="web-container">
+
+        <!-- Seccion del HEADER -->
+        <div class="header ">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="img/logo.jpeg" alt="Logo">
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Inicio</a>
+                <a href="belleza.html">Belleza</a>
+                <a href="lenceria.html">Lenceria</a>
+                <a href="skyncare.html">SkynCare</a>
+                <a href="cosmeticos.html">Cosmeticos</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <div>
-                <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <main class="main">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="" class="form">
+                        <h3>Formulario de contacto</h3>
+                        <fieldset>
+                            <!-- Etiqueta para nombre de formulario-->
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Telefono:</label>
+                                <input type="phone" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="(477) 123 1234">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3> Atencion al cliente </h3>
+                    <div class="information">
+                        <p><i class="fa-solid fa-clock"></i> Lunes a viernes 9:30am a 6:00 pm</p>
+                        <p><i class="fa-solid fa-phone"></i>  (477) 123 45 78 </p>
+                        <p><i class="fa-solid fa-envelope"></i> correo-empresa@gmail.com </p>
+                    </div>
+                    <div class="img-info">
+                        <img src="img/servicio-cliente.png" alt="imagen servicio cliente" >
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
+        </main>
 
-    <main class="main">
-        <div class="wrapper">
-            <div class="contact-form">
-                <!-- Formularios -->
-                <form action="" class="form">
-                    <fieldset>
-                        <!-- Etiqueta para nombre de formulario-->
-                        <legend>Formulario de contacto</legend>
-                        <p>
-                            <label for="nombre">
-                                Nombre:
-                            </label>
-                            <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-                        </p>
 
-                        <p>
-                            <label for="mail">
-                                E-mail:
-                            </label>
-                            <input type="text" name="mail" placeholder="Ingresa tu mail">
-                        </p>
-
-                        <p>
-                            <label for="telephone">
-                                Telefono
-                            </label>
-                            <input type="text" name="telephone" placeholder="Ingresa tu telefono">
-                        </p>
-                        <p>
-                            <label> Comentarios:</label>  
-                            <textarea name="comentario"></textarea>
-                        </p>
-                        <div>
-                            <input type="submit" value="Enviar">
-                        </div>
-                    </fieldset>
-                </form>
+        <!-- Seccion del FOOTER -->
+        <footer class="footer">
+            <div class="social-networks">
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
             </div>
-
-            <div class="contact-info">
-                <h3> Atencion al cliente </h3>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i> Lunes a viernes 9:30am a 6:00 pm</li>
-                    <li><i class="fa-solid fa-phone"></i> (477) 123 45 78 </li>
-                    <li><i class="fa-solid fa-envelope"></i> correo-empresa@gmail.com </li>
-                </ul>
+            <div class="copyright">
+                <p>Todos los derechos reservados © 2022 | Pink Kiss S.A. de C.V.</p>
             </div>
-        </div>
-    </main>
-
-    <!-- Pie de pagina -->
-    <footer class="footer">
-        <div class="social-networks">
-            <a href="#">
-                <img src="img/facebook.png" alt="facebook">
-            </a>
-            <a href="#">
-                <img src="img/instagram.png" alt="Instagram">
-            </a>
-            <a href="#">
-                <img src="img/whatsapp.png" alt="whatsapp">
-            </a>
-        </div>
-        <div class="copyright">
-            <p>Todos los derechos reservados © 2022 | Pink Kiss S.A. de C.V.</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
