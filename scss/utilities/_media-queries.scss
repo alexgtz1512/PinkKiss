@@ -41,6 +41,20 @@
                 order: 0;
             }
         }
+
+        // Seccion contacto
+        .contact-container {
+            flex-direction: column;
+            align-items: center;
+
+            .contact-form {
+                width: 80%;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
