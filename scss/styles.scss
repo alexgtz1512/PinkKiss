@@ -1,6 +1,7 @@
 // imports
 @import "utilities/variables";
 @import "utilities/mixins";
+@import "utilities/extends";
 @import "base/fonts";
 @import "base/base";
 @import "components/animations";
@@ -13,9 +14,8 @@
     min-height: 100vh;
     padding: 10px;
     margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 15px;
+
+    @include flexible (column, nowrap, flex-start, stretch, 15px);
 }
 
 // Seccion HEADER
@@ -45,7 +45,6 @@
     }
 
     .nav-bar {
-        // background-color: #646FD4;
         flex: 2 1 auto;
 
         @include flexible (row, nowrap, space-evenly, center, 0);
@@ -74,8 +73,7 @@
         height: $offer-height;
 
         img {
-            width: 100%;
-            height: 100%;
+            @extend %imgFull;
         }
     }
 
@@ -104,8 +102,7 @@
     
                 img {
                     border-radius: 15px;
-                    width: 100%;
-                    height: 100%;
+                    @extend %imgFull;
                 }
             }
 
@@ -150,8 +147,7 @@
         height: $ads-height;
 
         img {
-            width: 100%;
-            height: 100%;
+            @extend %imgFull;
         }
     }
 
@@ -187,12 +183,9 @@
 
 
             .img-info {
-                width: 100%;
-                height: 80%;
 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    @extend %imgFull;
                 }
             }
 
