@@ -1,0 +1,8 @@
+// mixins de la pagina
+@mixin flexible ($dir, $wrap, $justcon, $alitem, $gap){
+    display        : flex;
+    flex-flow      : $dir $wrap;
+    justify-content: $justcon;
+    align-items    : $alitem;
+    gap            : $gap;
+}
